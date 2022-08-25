@@ -1,4 +1,4 @@
-import { ADD_TODO, CLEAR_COMPLETED, COLOR_TODO, COMPLETED_TODO, REMOVE_TODO, TOGGLE_TODO } from "./actionTypes"
+import { ADD_TODO, CLEAR_COMPLETED, COLOR_TODO, All_COMPLETED_TODO, REMOVE_TODO, TOGGLE_TODO } from "./actionTypes"
 
 export const added = (todo) => {
     return {
@@ -27,7 +27,7 @@ export const removed = (id) => {
 }
 export const allCompleted = () => {
     return {
-        type: COMPLETED_TODO,
+        type: All_COMPLETED_TODO,
     }
 }
 export const cleared = () => {
@@ -35,14 +35,5 @@ export const cleared = () => {
         type: CLEAR_COMPLETED
     }
 }
-export const addTodo = (todo) => {
-    return (dispatch) => {
-        dispatch(added(todo));
-    }
-}
-export const toggleTodo = (id) => {
-    return (dispatch) => {
-        dispatch(toggled(id));
-    }
-}
+
 
