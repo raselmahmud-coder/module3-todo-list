@@ -20,6 +20,8 @@ export const reducer = (state = initState, action) => {
         ...state,
         {
           id: nextTodoId(state),
+          text: action.todo,
+          completed: false,
         },
       ];
     case TOGGLE_TODO:

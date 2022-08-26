@@ -15,7 +15,6 @@ export default function Footer() {
   const todo = useSelector((state) => state.todo);
   const incomplete = todo.filter((t) => !t.completed).length;
   const filter = useSelector((state) => state.filter);
-  console.log(filter);
   const dispatch = useDispatch();
   const handleStatusChange = (status) => {
     dispatch(statusChanged(status));

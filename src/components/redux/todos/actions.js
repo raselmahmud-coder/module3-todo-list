@@ -30,7 +30,7 @@ export const allCompleted = () => {
         type: All_COMPLETED_TODO,
     }
 }
-export const cleared = () => {
+export const AllClearedComplete = () => {
     return {
         type: CLEAR_COMPLETED
     }
